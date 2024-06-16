@@ -54,7 +54,9 @@ Retorna o número de elementos presentes no conjunto.
 #### Execução e saída
 
 gcc conjuntos.c -o conjuntos
+
 ./conjuntos
+
 
 Conjunto 1: 1 2 3 4 
 Conjunto 2: 3 4 5 6 
