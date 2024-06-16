@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include<stbool.h>
 
 
 #define TAM 100
@@ -19,14 +20,14 @@ void inserirElemento(Conjunto *conjunto, int elemento){
 	conjunto->tamanho++;
 }
 
-int pertenceConjunto(Conjunto *conjunto, int elemento){
+bool pertenceConjunto(Conjunto *conjunto, int elemento){
 	for(int i = 0 ; i < conjunto->tamanho; i++) {
 		if (elemento == conjunto->elemento[i]){
 			printf("%i pertence ao conjunto\n",elemento);
-			return 1;
+			return true;
 		}
 	}
-	return 0;
+	return false;
 }
 
 void removeElemento(Conjunto *conjunto, int elemento){
